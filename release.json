@@ -1,1 +1,12 @@
-{}
+{
+  "version": "4.0.3",
+  "channel": "stable",
+  "releaseDate": "2026-08-06",
+  "windows": "RecoveryHub-4.0.3-Setup.msi",
+  "android": "ConnectRecovery-4.0.3-release.apk",
+  "windowsChecksum": "877fde39579754a22e3fff9000552f3073edb76ccd72441d9d275cf5641e1380",
+  "androidChecksum": "b0ea31b1c95c3e473b8febb2baf74d8e1ef99b5fce1fe26c5f7c29c2737bb68b",
+  "minimumVersion": "3.0.0",
+  "releaseNotes": "Fixed: Cloud Backup now accepts the full R2 endpoint URL pasted into Account ID.\nFixed: connection errors say what actually went wrong instead of 'null'.\nFixed: maximising no longer covers the Windows taskbar.\nAutomatic updates, Finance section, receipt lifecycle fix and monochrome interface.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.0.3"
+}
