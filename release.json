@@ -1,12 +1,12 @@
 {
-  "version": "4.2.1",
+  "version": "4.4.0",
   "channel": "stable",
-  "releaseDate": "2026-08-09",
-  "windows": "RecoveryHub-4.2.1-Setup.msi",
-  "android": "ConnectRecovery-4.2.1-release.apk",
-  "windowsChecksum": "bce4592bd2dd868b993fb4a68071ce71fbff4ff8c26423057e0f7ca6bcffb766",
-  "androidChecksum": "29d49b2caac5818d3b38c231d34a6ecab13f1ebaa9736d78ff80e72666f108e4",
+  "releaseDate": "2026-08-10",
+  "windows": "RecoveryHub-4.4.0-Setup.msi",
+  "android": "ConnectRecovery-4.4.0-release.apk",
+  "windowsChecksum": "42ff8d00e6844477ca82b858565ac7443f6ffd170196fd62c71d1d09d48d431b",
+  "androidChecksum": "b344d80a3128c08a61deb4512b1421a807ba04713604cd021e99077aadb0cccf",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: a serious display bug in the Android app introduced by the 4.2.0 balance work.\n\nWhile loading the customer list, the app ran a second database query part-way through reading each customer. That could cause fields read before it and after it to come from different rows, so a customer could appear with one person's ID, name and address and another person's status and area. With 1,741 customers this was reliable rather than rare.\n\nNothing stored was damaged - not on the phone and not in the office. The office database was checked field by field before and after: 1,741 customers, zero identity fields changed, payments and totals unchanged. But a mixed-up customer on screen could have led to a payment being recorded against the wrong person, so update as soon as you can.\n\nThe customer list is now built from the query result alone, and the code that caused it can no longer be written - it is a compile error.\n\nBalance reconciliation is unchanged and still works exactly as in 4.2.0, including holding back a doorstep payment that has not synced yet.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.2.1"
+  "releaseNotes": "Fixed: paid receipts could still show UNPAID. A receipt's amount due includes any balance carried into the visit, and settlement was comparing money against that full figure instead of what the receipt itself charged - so a receipt written while the customer already owed something could never reach PAID. Six receipts in the live ledger were in that state and have been corrected automatically on first launch. Genuinely outstanding receipts are untouched.\n\nFixed: deleting a receipt did not change the customer's balance. Every payment stores the balance it was computed against, so removing one left every later payment carrying figures that still included the deleted money. Deleting now rebuilds the customer's figures from the payments that remain, after its backup.\n\nNew: the payment form now asks what kind of visit it is.\n\n   Collect payment    bill this month and record what you took\n   Unpaid visit       bill this month, nothing collected\n   Old balance only   collect arrears without billing a new month\n\nYou no longer have to enter a fake price, or a fake zero, to record an unpaid visit or to settle an old balance. Settling arrears no longer bills a second month by accident.\n\nEverything from 4.2 and 4.3 is included: balance reconciliation from the office to the phone, the customer identity fix, the History page, and the sync retry protections.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.4.0"
 }
