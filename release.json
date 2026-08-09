@@ -1,12 +1,12 @@
 {
-  "version": "4.0.3",
+  "version": "4.1.0",
   "channel": "stable",
-  "releaseDate": "2026-08-06",
-  "windows": "RecoveryHub-4.0.3-Setup.msi",
-  "android": "ConnectRecovery-4.0.3-release.apk",
-  "windowsChecksum": "877fde39579754a22e3fff9000552f3073edb76ccd72441d9d275cf5641e1380",
-  "androidChecksum": "b0ea31b1c95c3e473b8febb2baf74d8e1ef99b5fce1fe26c5f7c29c2737bb68b",
+  "releaseDate": "2026-08-09",
+  "windows": "RecoveryHub-4.1.0-Setup.msi",
+  "android": "ConnectRecovery-4.1.0-release.apk",
+  "windowsChecksum": "0100ee4900ba4dd87a1e1d45fdddc606579cab047f94329516762b66b28bb352",
+  "androidChecksum": "533e28e6fa1b0fad86200dcd0a59b01f6912bb57dc58ca4a0cb5c5fefa6ff760",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: Cloud Backup now accepts the full R2 endpoint URL pasted into Account ID.\nFixed: connection errors say what actually went wrong instead of 'null'.\nFixed: maximising no longer covers the Windows taskbar.\nAutomatic updates, Finance section, receipt lifecycle fix and monochrome interface.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.0.3"
+  "releaseNotes": "Fixed: a collector's payment could be destroyed by syncing. Receipt numbers are generated per phone, so two collectors both produce R-000001; the office mistook the second payment for the first, answered \"duplicate\", and the phone deleted it. Payments now carry their own identity and only leave the queue when the office confirms that exact payment.\n\nFixed: unpaid doorstep visits were never sent to the office at all.\n\nFixed: a payment collected in the morning but synced in the evening did not reach the customer's balance if the office had recorded anything in between.\n\nNew: History page on Windows - the day's receipts, office and field together, with search, date navigation, status/source/collector filters and reprint.\n\nAlso: customer addresses on the customer cards and in Customer 360, and receipt status filters on the customer timeline.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.1.0"
 }
