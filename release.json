@@ -1,12 +1,12 @@
 {
-  "version": "4.1.0",
+  "version": "4.1.1",
   "channel": "stable",
   "releaseDate": "2026-08-09",
-  "windows": "RecoveryHub-4.1.0-Setup.msi",
-  "android": "ConnectRecovery-4.1.0-release.apk",
-  "windowsChecksum": "0100ee4900ba4dd87a1e1d45fdddc606579cab047f94329516762b66b28bb352",
-  "androidChecksum": "533e28e6fa1b0fad86200dcd0a59b01f6912bb57dc58ca4a0cb5c5fefa6ff760",
+  "windows": "RecoveryHub-4.1.1-Setup.msi",
+  "android": "ConnectRecovery-4.1.1-release.apk",
+  "windowsChecksum": "a1dea14ebe3c9511274da4af64dc45046f146cd51e6bdbdd83925d3cdff899cd",
+  "androidChecksum": "90601dd8d42a7880a99a2fb2138358c9788b0f05ef612bbb8f5694cf9dcc4427",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: a collector's payment could be destroyed by syncing. Receipt numbers are generated per phone, so two collectors both produce R-000001; the office mistook the second payment for the first, answered \"duplicate\", and the phone deleted it. Payments now carry their own identity and only leave the queue when the office confirms that exact payment.\n\nFixed: unpaid doorstep visits were never sent to the office at all.\n\nFixed: a payment collected in the morning but synced in the evening did not reach the customer's balance if the office had recorded anything in between.\n\nNew: History page on Windows - the day's receipts, office and field together, with search, date navigation, status/source/collector filters and reprint.\n\nAlso: customer addresses on the customer cards and in Customer 360, and receipt status filters on the customer timeline.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.1.0"
+  "releaseNotes": "Fixed: on a laptop the left-hand navigation could not be scrolled. With seventeen entries the list was taller than the screen, so everything below Route Sheet - including the server Start/Stop control and the version footer - was cut off with no way to reach it. The navigation now scrolls, shows a scrollbar when there is more below, and the server control stays pinned at the bottom.\n\nFixed: the window opened at a fixed 1280x840, which is taller than a common 1366x768 laptop display, so its bottom edge sat off-screen. It now sizes itself to fit the screen it opens on.\n\nEverything from 4.1.0 is included: the synchronization data-loss fix, the History page, customer addresses, and receipt status filters.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.1.1"
 }
