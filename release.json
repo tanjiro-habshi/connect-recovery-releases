@@ -4,7 +4,7 @@
   "releaseDate": "2026-08-09",
   "windows": "RecoveryHub-4.2.1-Setup.msi",
   "android": "ConnectRecovery-4.2.1-release.apk",
-  "windowsChecksum": "73f43758b13f6a5b6828ccbe13b4b816cd0a8ddb4c61425a3927c15412ed8276",
+  "windowsChecksum": "bce4592bd2dd868b993fb4a68071ce71fbff4ff8c26423057e0f7ca6bcffb766",
   "androidChecksum": "29d49b2caac5818d3b38c231d34a6ecab13f1ebaa9736d78ff80e72666f108e4",
   "minimumVersion": "3.0.0",
   "releaseNotes": "Fixed: a serious display bug in the Android app introduced by the 4.2.0 balance work.\n\nWhile loading the customer list, the app ran a second database query part-way through reading each customer. That could cause fields read before it and after it to come from different rows, so a customer could appear with one person's ID, name and address and another person's status and area. With 1,741 customers this was reliable rather than rare.\n\nNothing stored was damaged - not on the phone and not in the office. The office database was checked field by field before and after: 1,741 customers, zero identity fields changed, payments and totals unchanged. But a mixed-up customer on screen could have led to a payment being recorded against the wrong person, so update as soon as you can.\n\nThe customer list is now built from the query result alone, and the code that caused it can no longer be written - it is a compile error.\n\nBalance reconciliation is unchanged and still works exactly as in 4.2.0, including holding back a doorstep payment that has not synced yet.",
