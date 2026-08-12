@@ -1,12 +1,12 @@
 {
-  "version": "4.5.2",
+  "version": "4.5.3",
   "channel": "stable",
   "releaseDate": "2026-08-12",
-  "windows": "RecoveryHub-4.5.2-Setup.msi",
-  "android": "ConnectRecovery-4.5.2-release.apk",
-  "windowsChecksum": "91db9cf7b014ca556d2b2efbc7caf1e21a401174b359776f3345887bf1513a55",
+  "windows": "RecoveryHub-4.5.3-Setup.msi",
+  "android": "ConnectRecovery-4.5.3-release.apk",
+  "windowsChecksum": "c60f3b5a941d368b0ee43d1819511164b7a3f1c95b17ace9d4f3d73cf7f1cb92",
   "androidChecksum": "c101a97515a95814061efd2e83f1e52f33aef1ec9154d3006a7e887dc1f042e5",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: a Product or New Connection payment printed LOAN wording on the customer's receipt.\n\nProducts and connection fees share the same internal machinery as a loan, and the receipt was keyed on that rather than on the payment type. So recording a Rs. 15,000 new connection printed \"Loan Amount 15,000 / Loan Balance 0 / Loan Status Cleared\" on a receipt handed to a customer who had never been lent anything. Loan wording now appears only on an actual loan; an item names itself and shows what is still owed on it.\n\nFixed: the payment type buttons were clipped to \"Installmen\" and \"New\" because six categories no longer fit one row. They wrap now.\n\nReceipts print for every payment type - that was never gated on the category, only on a printer being available, and it says so plainly when there is not one.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.2"
+  "releaseNotes": "",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.3"
 }
