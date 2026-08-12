@@ -1,12 +1,12 @@
 {
-  "version": "4.5.0",
+  "version": "4.5.1",
   "channel": "stable",
   "releaseDate": "2026-08-12",
-  "windows": "RecoveryHub-4.5.0-Setup.msi",
-  "android": "ConnectRecovery-4.5.0-release.apk",
-  "windowsChecksum": "6fea3546906a84898affc4767ae892a34b03617a7d286fa702975d6f5dbd059b",
-  "androidChecksum": "135663f84238298c50b893cdbba226c3a847548a027d5a556398e50febe9b9b4",
+  "windows": "RecoveryHub-4.5.1-Setup.msi",
+  "android": "ConnectRecovery-4.5.1-release.apk",
+  "windowsChecksum": "a1c7e20f708e69afc9166b719c6dc4ed710539bef18f02286e63879a9b022c55",
+  "androidChecksum": "99f6a2a998d5e7409896c2546616cf9d16a63701882aeded5a878a5fc3d2993a",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "New: payment categories that mean what they say.\n\n   Monthly       bill the month, with an explicit Months field\n   Installment   unchanged\n   Advance       unchanged\n   Loan          unchanged\n   Product       any item - WiFi Router, ONU, cable, installation, or anything you type\n   New Connection  a one-time setup fee\n\nFixed: money that is not service is no longer turned into months. Recording a Rs. 15,000 connection fee for a customer on Rs. 3,500 a month used to write 4.28 months against the account - a customer credited with service they had not bought. Connection fees and products now record zero months, and a monthly payment takes the number of months you type rather than working it out from the amount.\n\nNew: Products can actually be sold. The Product option existed but the form never asked what was sold or for how much, so it recorded nothing. It now takes the item name and price, with quick picks for the usual items - and the name is free text, so you can sell anything.\n\nFixed: a payment for a product was paying off the subscription. A customer owing Rs. 1,200 for the month who paid Rs. 3,000 towards an Rs. 8,000 router had that money applied to the month instead. Service and items are now settled separately: paying for a router can only settle items, and a monthly collection can only settle service.\n\nReceipts now name the item instead of printing \"Loan Issued\", show what is still owed on that item separately from the monthly balance, and print long item names in full instead of clipping them. History shows the category on each row - the item name for a product, or New Connection.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.0"
+  "releaseNotes": "Fixed: deleting a payment could silently write off money owed on equipment.\n\nThe rebuild that runs after a deletion left out the amount a product, connection fee or loan had put on the customer's account. So for any customer who had been sold something, deleting any payment rebuilt their ledger as if the item had never been sold - the item's receipt read PAID however little had been handed over, and the outstanding equipment debt vanished from the balance. Deleting a Rs. 800 monthly payment could wipe Rs. 5,000 owed on a router.\n\nEverything else in 4.5.0 is included: Product and New Connection payment types, the explicit Months field, receipts that name the item instead of printing \"Loan Issued\", and History showing the category on each row.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.1"
 }
