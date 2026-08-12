@@ -5,7 +5,7 @@
     "windows":  "RecoveryHub-4.5.4-Setup.msi",
     "android":  "ConnectRecovery-4.5.4-release.apk",
     "windowsChecksum":  "604e020b88c90599f8f9a5aa7a25f2a48e47971d63af4c1b766bd714bae4f2e5",
-    "androidChecksum":  "c101a97515a95814061efd2e83f1e52f33aef1ec9154d3006a7e887dc1f042e5",
+    "androidChecksum":  "2771f8be6315caaa503a7b34be429070109ca8547bab35b308f43f40565a9726",
     "minimumVersion":  "3.0.0",
     "releaseNotes":  "",
     "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.4"
