@@ -1,12 +1,12 @@
 {
-  "version": "4.5.1",
+  "version": "4.5.2",
   "channel": "stable",
   "releaseDate": "2026-08-12",
-  "windows": "RecoveryHub-4.5.1-Setup.msi",
-  "android": "ConnectRecovery-4.5.1-release.apk",
-  "windowsChecksum": "a1c7e20f708e69afc9166b719c6dc4ed710539bef18f02286e63879a9b022c55",
-  "androidChecksum": "99f6a2a998d5e7409896c2546616cf9d16a63701882aeded5a878a5fc3d2993a",
+  "windows": "RecoveryHub-4.5.2-Setup.msi",
+  "android": "ConnectRecovery-4.5.2-release.apk",
+  "windowsChecksum": "91db9cf7b014ca556d2b2efbc7caf1e21a401174b359776f3345887bf1513a55",
+  "androidChecksum": "c101a97515a95814061efd2e83f1e52f33aef1ec9154d3006a7e887dc1f042e5",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: deleting a payment could silently write off money owed on equipment.\n\nThe rebuild that runs after a deletion left out the amount a product, connection fee or loan had put on the customer's account. So for any customer who had been sold something, deleting any payment rebuilt their ledger as if the item had never been sold - the item's receipt read PAID however little had been handed over, and the outstanding equipment debt vanished from the balance. Deleting a Rs. 800 monthly payment could wipe Rs. 5,000 owed on a router.\n\nEverything else in 4.5.0 is included: Product and New Connection payment types, the explicit Months field, receipts that name the item instead of printing \"Loan Issued\", and History showing the category on each row.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.1"
+  "releaseNotes": "Fixed: a Product or New Connection payment printed LOAN wording on the customer's receipt.\n\nProducts and connection fees share the same internal machinery as a loan, and the receipt was keyed on that rather than on the payment type. So recording a Rs. 15,000 new connection printed \"Loan Amount 15,000 / Loan Balance 0 / Loan Status Cleared\" on a receipt handed to a customer who had never been lent anything. Loan wording now appears only on an actual loan; an item names itself and shows what is still owed on it.\n\nFixed: the payment type buttons were clipped to \"Installmen\" and \"New\" because six categories no longer fit one row. They wrap now.\n\nReceipts print for every payment type - that was never gated on the category, only on a printer being available, and it says so plainly when there is not one.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.2"
 }
