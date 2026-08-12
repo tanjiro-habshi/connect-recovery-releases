@@ -1,12 +1,12 @@
 {
-  "version": "4.4.0",
+  "version": "4.5.0",
   "channel": "stable",
-  "releaseDate": "2026-08-10",
-  "windows": "RecoveryHub-4.4.0-Setup.msi",
-  "android": "ConnectRecovery-4.4.0-release.apk",
-  "windowsChecksum": "42ff8d00e6844477ca82b858565ac7443f6ffd170196fd62c71d1d09d48d431b",
-  "androidChecksum": "b344d80a3128c08a61deb4512b1421a807ba04713604cd021e99077aadb0cccf",
+  "releaseDate": "2026-08-12",
+  "windows": "RecoveryHub-4.5.0-Setup.msi",
+  "android": "ConnectRecovery-4.5.0-release.apk",
+  "windowsChecksum": "6fea3546906a84898affc4767ae892a34b03617a7d286fa702975d6f5dbd059b",
+  "androidChecksum": "135663f84238298c50b893cdbba226c3a847548a027d5a556398e50febe9b9b4",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Fixed: paid receipts could still show UNPAID. A receipt's amount due includes any balance carried into the visit, and settlement was comparing money against that full figure instead of what the receipt itself charged - so a receipt written while the customer already owed something could never reach PAID. Six receipts in the live ledger were in that state and have been corrected automatically on first launch. Genuinely outstanding receipts are untouched.\n\nFixed: deleting a receipt did not change the customer's balance. Every payment stores the balance it was computed against, so removing one left every later payment carrying figures that still included the deleted money. Deleting now rebuilds the customer's figures from the payments that remain, after its backup.\n\nNew: the payment form now asks what kind of visit it is.\n\n   Collect payment    bill this month and record what you took\n   Unpaid visit       bill this month, nothing collected\n   Old balance only   collect arrears without billing a new month\n\nYou no longer have to enter a fake price, or a fake zero, to record an unpaid visit or to settle an old balance. Settling arrears no longer bills a second month by accident.\n\nEverything from 4.2 and 4.3 is included: balance reconciliation from the office to the phone, the customer identity fix, the History page, and the sync retry protections.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.4.0"
+  "releaseNotes": "New: payment categories that mean what they say.\n\n   Monthly       bill the month, with an explicit Months field\n   Installment   unchanged\n   Advance       unchanged\n   Loan          unchanged\n   Product       any item - WiFi Router, ONU, cable, installation, or anything you type\n   New Connection  a one-time setup fee\n\nFixed: money that is not service is no longer turned into months. Recording a Rs. 15,000 connection fee for a customer on Rs. 3,500 a month used to write 4.28 months against the account - a customer credited with service they had not bought. Connection fees and products now record zero months, and a monthly payment takes the number of months you type rather than working it out from the amount.\n\nNew: Products can actually be sold. The Product option existed but the form never asked what was sold or for how much, so it recorded nothing. It now takes the item name and price, with quick picks for the usual items - and the name is free text, so you can sell anything.\n\nFixed: a payment for a product was paying off the subscription. A customer owing Rs. 1,200 for the month who paid Rs. 3,000 towards an Rs. 8,000 router had that money applied to the month instead. Service and items are now settled separately: paying for a router can only settle items, and a monthly collection can only settle service.\n\nReceipts now name the item instead of printing \"Loan Issued\", show what is still owed on that item separately from the monthly balance, and print long item names in full instead of clipping them. History shows the category on each row - the item name for a product, or New Connection.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.5.0"
 }
