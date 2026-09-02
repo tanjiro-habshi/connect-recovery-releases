@@ -1,12 +1,12 @@
 {
-    "version":  "4.6.7",
+    "version":  "4.6.8",
     "channel":  "stable",
     "releaseDate":  "2026-09-02",
-    "windows":  "RecoveryHub-4.6.7-Setup.msi",
-    "android":  "ConnectRecovery-4.6.7-release.apk",
-    "windowsChecksum":  "14f41766b0974439829a291ac485c193172690b79c6eab07129c4dc717b4ca2e",
-    "androidChecksum":  "87f2ac5a7c4ee9c1a4440976e1a7a21b421b663c92d7d537b4fedbf1fab96cd7",
+    "windows":  "RecoveryHub-4.6.8-Setup.msi",
+    "android":  "ConnectRecovery-4.6.8-release.apk",
+    "windowsChecksum":  "b9ad5e16b52127f487dcdeb7b6a863c502814afb442c8066cb60a86e2ae999b2",
+    "androidChecksum":  "6cf74ce2cdddc30296061b81be4078d049eb9b83bcdd0fd506c92c34b9977528",
     "minimumVersion":  "3.0.0",
     "releaseNotes":  "",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.6.7"
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.6.8"
 }
