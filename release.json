@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.0",
+    "version":  "4.8.1",
     "channel":  "stable",
     "releaseDate":  "2026-09-08",
-    "windows":  "RecoveryHub-4.8.0-Setup.msi",
-    "android":  "ConnectRecovery-4.8.0-release.apk",
-    "windowsChecksum":  "1d839dd9428f825fa97b82ffb0a3b6ce40b128aad24da85cca75c2d001f46043",
-    "androidChecksum":  "5ee4e116d7f71bf4e4ed5957f76be3b7858ec1ef73550a9d4e13f5405af104fa",
+    "windows":  "RecoveryHub-4.8.1-Setup.msi",
+    "android":  "ConnectRecovery-4.8.1-release.apk",
+    "windowsChecksum":  "ceeb4580f989ded6dbad75b93e7b3820928fddf072a713fae6a0704b71ab6c30",
+    "androidChecksum":  "6fee61d0733069a2e963de58a690d707294672336926333c27c06b21c15fd98a",
     "minimumVersion":  "3.0.0",
     "releaseNotes":  "",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.0"
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.1"
 }
