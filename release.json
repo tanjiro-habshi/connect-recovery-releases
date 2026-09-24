@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.2",
-    "channel":  "stable",
-    "releaseDate":  "2026-09-13",
-    "windows":  "RecoveryHub-4.8.2-Setup.msi",
-    "android":  "ConnectRecovery-4.8.2-release.apk",
-    "windowsChecksum":  "225795609c9b6ae836571e4da847ef1812ad6ff55e0f6693ff685bcf5d47b74a",
-    "androidChecksum":  "2e8a84f6ccee5d1fb27c746212a8042669aa93b16d55ea7eed82056a079dbe1a",
-    "minimumVersion":  "3.0.0",
-    "releaseNotes":  "",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.2"
+  "version": "4.8.3",
+  "channel": "stable",
+  "releaseDate": "2026-09-24",
+  "windows": "RecoveryHub-4.8.3-Setup.msi",
+  "android": "ConnectRecovery-4.8.3-release.apk",
+  "windowsChecksum": "6ddea6041d6b1b2e924c20e832bffbbb788b816babb8743dbe4dfc24803e5d00",
+  "androidChecksum": "ca7a64f73be8829574aed8af65b8b2e320ccced7fd66d2d7baee7dec5cfd4b01",
+  "minimumVersion": "3.0.0",
+  "releaseNotes": "Deleting a receipt no longer leaves its money on the customer. Clear Last Balance and Clear All Last Balance write off a debt without inventing a payment or an advance. Sync Password fetches the office password on its own, with no decoy receipt.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.3"
 }
