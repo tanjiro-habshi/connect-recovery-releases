@@ -1,12 +1,12 @@
 {
-  "version": "4.8.3",
+  "version": "4.8.4",
   "channel": "stable",
-  "releaseDate": "2026-09-24",
-  "windows": "RecoveryHub-4.8.3-Setup.msi",
-  "android": "ConnectRecovery-4.8.3-release.apk",
-  "windowsChecksum": "6ddea6041d6b1b2e924c20e832bffbbb788b816babb8743dbe4dfc24803e5d00",
-  "androidChecksum": "ca7a64f73be8829574aed8af65b8b2e320ccced7fd66d2d7baee7dec5cfd4b01",
+  "releaseDate": "2026-10-03",
+  "windows": "RecoveryHub-4.8.4-Setup.msi",
+  "android": "ConnectRecovery-4.8.4-release.apk",
+  "windowsChecksum": "1c34b3786fd33df9dc22e18b794a6d7fd2b1e42cc0b16155c44528f758ac36c4",
+  "androidChecksum": "05585f0a15e49c03277c234242bbb466d139ba65690044ad6863a847efe8052a",
   "minimumVersion": "3.0.0",
-  "releaseNotes": "Deleting a receipt no longer leaves its money on the customer. Clear Last Balance and Clear All Last Balance write off a debt without inventing a payment or an advance. Sync Password fetches the office password on its own, with no decoy receipt.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.3"
+  "releaseNotes": "Deleting a receipt no longer leaves its money on the customer, and a receipt's Paid/Unpaid status is now worked out from the ledger on both devices instead of being frozen when the visit was written. Unpaid receipts from the phone are visible in office History. Balances now reconcile both ways: a payment taken at the office reaches the phone, without creating a payment, a receipt or an advance, and without ever overwriting money the phone is still holding.",
+  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.4"
 }
