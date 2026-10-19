@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.5",
+    "version":  "4.8.6",
     "channel":  "stable",
     "releaseDate":  "2026-10-19",
-    "windows":  "RecoveryHub-4.8.5-Setup.msi",
-    "android":  "ConnectRecovery-4.8.5-release.apk",
-    "windowsChecksum":  "3ad0fb65fa039a412eb1c1bb7cfbedfa55bf090abf14b22d209aa167a64b7f2a",
-    "androidChecksum":  "76f3d8531d4a5ef7b5c05b1cc39a5477c68cf27387d1c57392c097532853c010",
+    "windows":  "RecoveryHub-4.8.6-Setup.msi",
+    "android":  "ConnectRecovery-4.8.6-release.apk",
+    "windowsChecksum":  "1498ee576f34e6915d79727892ab5a0d0d91f447c9e146891095b6aa2113dbc7",
+    "androidChecksum":  "056273ab203de0b289e42572bce952fcd58cd36832ed142b6109f4844f3175f4",
     "minimumVersion":  "3.0.0",
-    "releaseNotes":  "Clear Advance now gives up a customer\u0027s prepaid credit on its own, without writing off their debt and without touching loans or installments, and a cleared advance survives a PC-to-phone sync instead of reappearing. A new Last Balance Only filter shows just the customers who still carry a carried-forward balance, leaving search and sorting as they were. Sync Password still needs no receipt, and now tells an offline office, a rejected API key and an out-of-date office computer apart instead of reporting one vague failure.",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.5"
+    "releaseNotes":  "Fixes the update loop on the office PC. Recovery Hub reported a hardcoded 4.8.2 however many times you installed a newer build, so the updater kept offering the same version for ever; the version the app reports is now generated from the installer version and the two cannot drift apart again. First-run setup no longer demands an Excel billing workbook before it will start - the office keeps its books in Recovery Hub's own database and a spreadsheet is only ever imported or exported.",
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.6"
 }
