@@ -1,12 +1,12 @@
 {
-  "version": "4.8.4",
-  "channel": "stable",
-  "releaseDate": "2026-10-03",
-  "windows": "RecoveryHub-4.8.4-Setup.msi",
-  "android": "ConnectRecovery-4.8.4-release.apk",
-  "windowsChecksum": "1c34b3786fd33df9dc22e18b794a6d7fd2b1e42cc0b16155c44528f758ac36c4",
-  "androidChecksum": "05585f0a15e49c03277c234242bbb466d139ba65690044ad6863a847efe8052a",
-  "minimumVersion": "3.0.0",
-  "releaseNotes": "Deleting a receipt no longer leaves its money on the customer, and a receipt's Paid/Unpaid status is now worked out from the ledger on both devices instead of being frozen when the visit was written. Unpaid receipts from the phone are visible in office History. Balances now reconcile both ways: a payment taken at the office reaches the phone, without creating a payment, a receipt or an advance, and without ever overwriting money the phone is still holding.",
-  "downloadBase": "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.4"
+    "version":  "4.8.5",
+    "channel":  "stable",
+    "releaseDate":  "2026-10-19",
+    "windows":  "RecoveryHub-4.8.5-Setup.msi",
+    "android":  "ConnectRecovery-4.8.5-release.apk",
+    "windowsChecksum":  "3ad0fb65fa039a412eb1c1bb7cfbedfa55bf090abf14b22d209aa167a64b7f2a",
+    "androidChecksum":  "76f3d8531d4a5ef7b5c05b1cc39a5477c68cf27387d1c57392c097532853c010",
+    "minimumVersion":  "3.0.0",
+    "releaseNotes":  "Clear Advance now gives up a customer\u0027s prepaid credit on its own, without writing off their debt and without touching loans or installments, and a cleared advance survives a PC-to-phone sync instead of reappearing. A new Last Balance Only filter shows just the customers who still carry a carried-forward balance, leaving search and sorting as they were. Sync Password still needs no receipt, and now tells an offline office, a rejected API key and an out-of-date office computer apart instead of reporting one vague failure.",
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.5"
 }
