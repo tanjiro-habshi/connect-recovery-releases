@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.8",
+    "version":  "4.8.9",
     "channel":  "stable",
     "releaseDate":  "2026-10-20",
-    "windows":  "RecoveryHub-4.8.8-Setup.msi",
-    "android":  "ConnectRecovery-4.8.8-release.apk",
-    "windowsChecksum":  "e0bbe6a7c9fd9e1bbba4c552ac41ea59d0951b5a29150080ff92d70d7c200d48",
-    "androidChecksum":  "b7a827bedf9be8132e1d5c0b69dd5240330f3ece720bc40fb810e64116b913be",
+    "windows":  "RecoveryHub-4.8.9-Setup.msi",
+    "android":  "ConnectRecovery-4.8.9-release.apk",
+    "windowsChecksum":  "ada6c4f06b81757a8c7fda44a9b1b259b44214c90087bf0c46c1a41d24241062",
+    "androidChecksum":  "f205f9993359d5b2d1b4ca6afa61da9a88220e0b169ae01ce4c92323ac828efa",
     "minimumVersion":  "3.0.0",
-    "releaseNotes":  "Paid receipts no longer read UNPAID.\n\nIf your book has receipts showing UNPAID although the money was taken and no older debt could have taken it, this version repairs them the first time it starts. It takes a backup before it changes anything, records what it did, and can be undone. It only corrects a receipt\u0027s STATUS - no amount is changed, and no receipt is added or removed.\n\nA receipt whose money genuinely paid an older debt is left exactly as it is.\n",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.8"
+    "releaseNotes":  "Receipts that read \"PARTIALLY PAID\" against money paid in full are now repaired too.\n\n4.8.8 repaired receipts that had been credited nothing at all. This version also repairs the ones credited only part of their charge - the receipt showing \"Amount received 1,200, Settled so far 200\" where the 200 came from a later payment and the receipt\u0027s own 1,200 was never credited to it.\n\nAs before it takes a backup first, records what it did, and can be undone. Only a receipt\u0027s STATUS changes: no amount is altered, and no receipt is added or removed. A genuine part-payment is left exactly as it is, and so is a receipt whose money really did pay an older debt.\n",
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.9"
 }
