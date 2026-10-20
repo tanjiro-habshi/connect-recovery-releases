@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.7",
+    "version":  "4.8.8",
     "channel":  "stable",
     "releaseDate":  "2026-10-20",
-    "windows":  "RecoveryHub-4.8.7-Setup.msi",
-    "android":  "ConnectRecovery-4.8.7-release.apk",
-    "windowsChecksum":  "2bb283db3a6a15ca42077b4a5d2a00c8be293f5ea5834c5cd46d78cbb4f332cf",
-    "androidChecksum":  "048395e212dd99878469e126ec4272ca96a3696fd1ba4dfad20e8eef3f5c21fb",
+    "windows":  "RecoveryHub-4.8.8-Setup.msi",
+    "android":  "ConnectRecovery-4.8.8-release.apk",
+    "windowsChecksum":  "e0bbe6a7c9fd9e1bbba4c552ac41ea59d0951b5a29150080ff92d70d7c200d48",
+    "androidChecksum":  "b7a827bedf9be8132e1d5c0b69dd5240330f3ece720bc40fb810e64116b913be",
     "minimumVersion":  "3.0.0",
-    "releaseNotes":  "Fixes a startup failure on the office PC. Recovery Hub refused to open with 'Could not auto-detect the customers sheet' whenever the billing workbook had no phone column - the sheet's own name was never looked at - and a customers-only roster with no payments sheet failed the migration as well. Both are fixed, so a plain customer list imports and the application starts. Last Balance Only is now on the office Billing page too, not just the phone. Paid receipts no longer count as unpaid: the History filters and the PAID/PARTIAL/UNPAID totals were measuring the money against the customer's carried-forward balance instead of the receipt's own charge, so a receipt settled in full read as unpaid whenever the customer already owed something.",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.7"
+    "releaseNotes":  "Paid receipts no longer read UNPAID.\n\nIf your book has receipts showing UNPAID although the money was taken and no older debt could have taken it, this version repairs them the first time it starts. It takes a backup before it changes anything, records what it did, and can be undone. It only corrects a receipt\u0027s STATUS - no amount is changed, and no receipt is added or removed.\n\nA receipt whose money genuinely paid an older debt is left exactly as it is.\n",
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.8"
 }
