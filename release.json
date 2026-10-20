@@ -1,12 +1,12 @@
 {
-    "version":  "4.8.6",
+    "version":  "4.8.7",
     "channel":  "stable",
-    "releaseDate":  "2026-10-19",
-    "windows":  "RecoveryHub-4.8.6-Setup.msi",
-    "android":  "ConnectRecovery-4.8.6-release.apk",
-    "windowsChecksum":  "1498ee576f34e6915d79727892ab5a0d0d91f447c9e146891095b6aa2113dbc7",
-    "androidChecksum":  "056273ab203de0b289e42572bce952fcd58cd36832ed142b6109f4844f3175f4",
+    "releaseDate":  "2026-10-20",
+    "windows":  "RecoveryHub-4.8.7-Setup.msi",
+    "android":  "ConnectRecovery-4.8.7-release.apk",
+    "windowsChecksum":  "2bb283db3a6a15ca42077b4a5d2a00c8be293f5ea5834c5cd46d78cbb4f332cf",
+    "androidChecksum":  "048395e212dd99878469e126ec4272ca96a3696fd1ba4dfad20e8eef3f5c21fb",
     "minimumVersion":  "3.0.0",
-    "releaseNotes":  "Fixes the update loop on the office PC. Recovery Hub reported a hardcoded 4.8.2 however many times you installed a newer build, so the updater kept offering the same version for ever; the version the app reports is now generated from the installer version and the two cannot drift apart again. First-run setup no longer demands an Excel billing workbook before it will start - the office keeps its books in Recovery Hub's own database and a spreadsheet is only ever imported or exported.",
-    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.6"
+    "releaseNotes":  "Fixes a startup failure on the office PC. Recovery Hub refused to open with 'Could not auto-detect the customers sheet' whenever the billing workbook had no phone column - the sheet's own name was never looked at - and a customers-only roster with no payments sheet failed the migration as well. Both are fixed, so a plain customer list imports and the application starts. Last Balance Only is now on the office Billing page too, not just the phone. Paid receipts no longer count as unpaid: the History filters and the PAID/PARTIAL/UNPAID totals were measuring the money against the customer's carried-forward balance instead of the receipt's own charge, so a receipt settled in full read as unpaid whenever the customer already owed something.",
+    "downloadBase":  "https://github.com/tanjiro-habshi/connect-recovery-releases/releases/download/v4.8.7"
 }
